@@ -46,6 +46,7 @@ public class PanelPaint extends JPanel implements MouseListener {
         if (fi.equalsIgnoreCase("Cuadrado")) {
             this.nrof = 1;
         }
+        
 
     }
 
@@ -66,6 +67,8 @@ public class PanelPaint extends JPanel implements MouseListener {
             g.setColor(this.colorlinea);
             g.drawRect(px1, py1, dimx, dimy);
         }
+        
+        
 
     }
 

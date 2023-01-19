@@ -28,9 +28,7 @@ public class VentanaPaint extends javax.swing.JFrame {
         
         this.jComboBox2.addItem("Circulo");
         this.jComboBox2.addItem("Cuadrado");
-
-        this.jLabel1.getText();
-
+        
         this.panelPaint.setSize(800, 800);
         this.panelPaint.setLocation(0, 0);
         this.panelPaint.setBackground(Color.white);
