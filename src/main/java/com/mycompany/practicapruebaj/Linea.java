@@ -15,11 +15,11 @@ import javax.swing.JPanel;
  */
 public class Linea extends JPanel implements MouseListener {
 
-    private int px3;
-    private int py4;
-    private int x;
-    private int y;
-    private int px5 = 1;
+    private int px3 = 0;
+    private int py4 = 0;
+    private int x = 0;
+    private int y = 0;
+    private int px5 = 0;
     private int py6 = 0;
 
     public Linea() {
@@ -27,21 +27,22 @@ public class Linea extends JPanel implements MouseListener {
     }
     //capturar el valor
 
-    public Linea(int px3, int py4) {
+    /*public Linea(int px3, int py4) {
         this.px3 = x;
         this.py4 = y;
 
-    }
-
+    }*/
     @Override
     public void paint(Graphics g) {
         super.paint(g);
+        x=px3;
+        y=py4;
         System.out.println(px5);
         System.out.println(x);
         System.out.println(px3);
         System.out.println(py4);
 
-        g.drawLine(px3, y, px5, py6);
+        g.drawLine(x, y, px5, py6);
 
     }
 
@@ -49,9 +50,9 @@ public class Linea extends JPanel implements MouseListener {
     public void mouseClicked(MouseEvent e) {
 
         //arrastrar el raton
-        /*this.px5 = e.getX();
+        this.px5 = e.getX();
         this.py6 = e.getY();
-        super.repaint();*/
+        super.repaint();
     }
 
     @Override
